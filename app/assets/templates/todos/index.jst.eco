@@ -1,0 +1,19 @@
+<h1>Listing todos Backbone.js version</h1>
+
+<ul class="todo-list">
+  <%# if @todos.length: %>
+  <% console.log "todos in View " + @todos %>
+    <% for todo in @todos: %>
+      <li>
+        <% console.log "todo in View " + todo %>
+        <input type="checkbox" class="check" data-todo_id="<%= todo.get('id') %>" <%= if todo.get('done') then 'checked' %> />
+        <!--<div><%#= todo.get('done') %></div>-->
+        <div><%= todo.get('content') %></div>
+        <div><%= todo.get('limit_on') %></div>
+        <div><a href="#todos" class="button delete" data-todo_id="<%= todo.get('id') %>" >X</a></div>
+      </li>
+  <% end %>
+  <% # else: %>
+  <% # end %>
+  <a href="#todos/new">New Todo</a>
+</ul>

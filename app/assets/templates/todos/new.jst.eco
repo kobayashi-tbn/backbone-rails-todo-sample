@@ -1,0 +1,14 @@
+<h1>Editing Todo Backbone.js version</h1>
+<a href="#todos">Back</a>
+
+<form id="new_todo_form" class="simple_form">
+  <div class="inputs">
+    <input type="text" id="todo_content" placeholder="NEW CONTENT" />
+    <br/>
+    <input type="date" id="todo_limit_on" placeholder="LIMIT ON" />
+    <br/>
+  </div>
+  <div class="actions">
+    <input type="submit" value="Save" id="save_todo" class="button" />
+  </div>
+</form>
